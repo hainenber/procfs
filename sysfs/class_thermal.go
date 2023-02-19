@@ -23,7 +23,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/prometheus/procfs/internal/util"
+	"github.com/hainenber/procfs/internal/util"
 )
 
 // ClassThermalZoneStats contains info from files in /sys/class/thermal/thermal_zone<zone>

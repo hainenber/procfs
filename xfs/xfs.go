@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/prometheus/procfs/internal/fs"
+	"github.com/hainenber/procfs/internal/fs"
 )
 
 // Stats contains XFS filesystem runtime statistics, parsed from

@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/prometheus/procfs/internal/fs"
-	"github.com/prometheus/procfs/internal/util"
+	"github.com/hainenber/procfs/internal/fs"
+	"github.com/hainenber/procfs/internal/util"
 )
 
 // Originally, this USER_HZ value was dynamically retrieved via a sysconf call

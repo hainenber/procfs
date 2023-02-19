@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/prometheus/procfs/internal/util"
+	"github.com/hainenber/procfs/internal/util"
 )
 
 const sasPhyClassPath = "class/sas_phy"
