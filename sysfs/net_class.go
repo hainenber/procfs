@@ -134,7 +134,7 @@ func parseNetClassIface(devicePath string) (*NetClassIface, error) {
 		name := filepath.Join(devicePath, f.Name())
 		value, err := util.SysReadFile(name)
 		if err != nil {
-			if os.IsNotExist(err) || os.IsPermission(err) || err.Error() == "operation not supported" || errors.Is(err, os.ErrInvalid) {
+			if os.IsNotExist(err) || os.IsPermission(err) || err.Error() == "operation not supported" || errors.Is(err, os.ErrInvalid) || err.Error() == "invalid argument" {
 				continue
 			}
 			return nil, fmt.Errorf("failed to read file %q: %w", name, err)
